@@ -5,11 +5,7 @@ import { createStore } from 'vuex'
 const store = createStore({
   state: {
     token: '',
-    userInfo: {},
-    companyInfo: {},
-    mallInfo: {},
-    mallList: [],
-    settingInfo: {}
+    userInfo: {}
   },
   getters: {},
   mutations: {
@@ -19,9 +15,6 @@ const store = createStore({
       console.log(auth_info)
       state.token = auth_info.token
       state.userInfo = admin
-    },
-    setMallInfo(state, payload) {
-      state.mallInfo = payload
     },
     logout(state) {
       state.token = ''
