@@ -1,0 +1,53 @@
+@import 'src/assets/styles/variable.less';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: '';
+  display: block;
+  background: inherit;
+  filter: blur(0.1rem);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0.1rem;
+  z-index: -1;
+  opacity: 0.4;
+  transform-origin: 0 0;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, #5145f1, #40c9ff);
+  color: #fff;
+  .logo {
+    width: 44px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  .gif-wave {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    mix-blend-mode: screen;
+  }
+}
+.form {
+  margin-top: 40px;
+  padding: 0 24px;
+}

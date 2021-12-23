@@ -1,24 +1,27 @@
-# vue-next-3.0
+# Vue 3 + Typescript + Vite
 
 ## Project setup
+
+### 编译
+
 ```
-yarn install
+yarn dev
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### 构建
 
-### Compiles and minifies for production
 ```
 yarn build
 ```
 
 ### Lints and fixes files
+
 ```
 yarn lint
+
+yarn lint:fix
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).

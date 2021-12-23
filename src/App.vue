@@ -1,24 +1,17 @@
-<template>
-  <div id="app">
-    <router-view></router-view>
-    <router/>
-  </div>
-</template>
-
-<script>
-
-export default {
-  name: 'App',
-}
+<script setup lang="ts">
+  import { RouterView } from 'vue-router'
 </script>
 
+<template>
+  <RouterView />
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  /* Global less */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, PingFang SC,
+      Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  }
 </style>
